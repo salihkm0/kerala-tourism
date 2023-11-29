@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+
+.sticky {
+    position: fixed; 
+  left: 10px;
+  bottom: 10px;
+  border: 2px solid #dcaa1b;
+  border-radius: 10px;
+  width: 300px;
+  display: block;
+  overflow: hidden;
+  text-align: center;    
+  z-index: 9998;
+  padding: 0;
+}
+/*Header view Begin*/	
+.web-d-none.mob-d-block {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .web-d-none.mob-d-block {
+    display: block;
+  }
+  .cuisinesticky {
+/* position: fixed; 
+top: 50%;
+right: 10px;
+border-radius: 10px; */
+width: 350px;
+display: block;
+overflow: hidden;
+text-align: center;    
+z-index: 9998;
+padding: 0;
+border: 1px solid #fff;
+}
+}
+/*Header view End*/	
+/*Plan your trip view Begin*/	
+.hotel-search .form-control {
+      min-height: 45px !important
+  }
+  /*Plan your trip view end*/	
+/*Footer links view Begin*/	
+.pd_top{margin-top:40px; display:inline-block;}
+
+@media only screen and (max-width: 768px) {
+  .pd_top{ margin-top: 10px; background-color: #d7ddec; }
+}
+/*Footer links view End*/	
+/*Cookie Consent Begin*/
+#cookieConsent {
+  background-color:rgba(30, 125, 130, 0.95);
+  min-height: 30px;
+  font-size: 14.4px;
+  color: #fff;
+  line-height: 26px;
+  padding: 8px 0 8px 30px;
+  font-family: "Trebuchet MS",Helvetica,sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 9999;
+}
+#cookieConsent a {
+  color: #81f9ff;
+  text-decoration: none;
+}
+#closeCookieConsent {
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: -15px 0 0 0;
+  font-weight: bold;
+}
+#closeCookieConsent:hover {
+  color: #FFF;
+}
+#cookieConsent a.cookieConsentOK {
+  background-color: #08575B;
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0 20px;
+  cursor: pointer;
+  float: right;
+  margin: 0 60px 0 10px;
+}
+#cookieConsent a.cookieConsentOK:hover {
+  background-color: #063739;
+}
+/*Cookie Consent End*/
+/* Footer address view*/
+#credit {
+      font-size: 16px;
+  }
+  #credit,
+  #credit h3,
+  #credit h3 small,
+  #credit a {
+      font-family: 'Quicksand', sans-serif;
+  }
+  #credit a {
+      font-size: 16px;
+  }
+  /* Footer address view End*/

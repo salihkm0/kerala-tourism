@@ -1,3 +1,0 @@
-;/*FB_PKG_DELIM*/
-
-__d("MqttEnvConfigStorage",["WebStorage"],(function(a,b,c,d,e,f,g){var h,i="mqtt:";function a(a,b){var d=(h||(h=c("WebStorage"))).getLocalStorage();if(d){d=d.getItem(i+a);if(d!=null)return d}return b}function b(a,b){var d=(h||(h=c("WebStorage"))).getLocalStorage();d&&(b==null?d.removeItem(i+a):(h||(h=c("WebStorage"))).setItemGuarded(d,i+a,b))}g.configRead=a;g.configWrite=b}),98);

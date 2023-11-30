@@ -10,86 +10,93 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
         crossorigin="anonymous"/>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
         <link rel="shortcut icon" href="assets /images/kerala-logo.png" type="image/x-icon">
         <title>Kerala Tourism</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="logo">
-                    <a href="#home"><img src="assets /images/kerala-logo.png" alt=""></a>
-                </div>
-                <ul class="nav-links">
-                    <li class="hideMobile"><a href="#home">Home</a></li>
-                    <li class="hideMobile"><a href="#hotspots">Tourist Hotspots</a></li>
-                    <li class="hideMobile"><a href="">Things To Do</a></li>
-                    <li class="hideMobile"><a href="#gallery">Gallery</a></li>
-                    <li class="hideMobile"><a href="">About</a></li>
-                    <li class=""><a href="Authentication/signup.html">Login</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="explore">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/assets /images/caravan-1920x6502.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets /images/parambikulam.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/assets /images/destination-wedding-banner-1920.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </section>
+        
+      <header>
+        <nav class="nav">
+          <i class="uil uil-bars navOpenBtn"></i>
+          <a href="#" class="logo"><img src="assets /images/kerala-logo.png" alt=""></a>
+          <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">Tourist Hotspots</a></li>
+            <li><a href="#">Things To Do</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="Authentication/signup.html">Login</a></li>
+          </ul>
+    
+          <i class="uil uil-search search-icon" id="searchIcon"></i>
+          <div class="search-box">
+            <i class="uil uil-search search-icon"></i>
+            <input type="text" placeholder="Search here..." />
+          </div>
+        </nav>
+      </header>
 
 
-        <section class="hero" id="home">
-            <video autoplay muted loop id="myVideo">
-                <source src="/assets /videos/Signature_Video____Kerala_Tourism___Experience_God’s_Own_Country(720p).mp4" type="video/mp4">
-            </video>
+
+      <section class="hero" id="home">
+        <video autoplay muted loop id="myVideo">
+            <source src="/assets /videos/Signature_Video____Kerala_Tourism___Experience_God’s_Own_Country(720p).mp4" type="video/mp4">
+        </video>
 
 
-            <div class="about">
-                <h1>Welcome to Kerala!</h1>
-                <p>
-                    Kerala is situated in the southwestern end of the Indian subcontinent. 
-                    Kerala has a long history of art and cultural heritage and foreign trade with other countries. 
-                    The state with the highest literacy rate in India, is noted for its achievements in education, 
-                    health, gender equality, social justice, law and order. In addition to these, the state has the 
-                    lowest infant mortality rate in the country. Kerala lies between the Arabian Sea in the West and 
-                    the Western Ghats (Sahyadris) in the East with an area of 38863 sq km. It is one of the five states 
-                    in the linguistic-cultural area known as South India. The neighbouring states of Kerala are Tamil Nadu 
-                    and Karnataka. Mayyazhi (Mahe / Mahe) is a part of Pondicherry (Puducherry) and lies within Kerala. 
-                    Though the Lakshadweeps in the Arabian Sea is part of the Union Territories, it has a close alliance 
-                    with the linguistic and cultural heritage of Kerala. Before the independence of India, Kerala was 
-                    one of the princely states in india. Later on 1 July 1949, the princely states of Travancore and 
-                    Cochin united to form the Travancore-Cochin State. Later, When the Malabar region (formerly part 
-                    of Madras state) was added to the Travancore-Cochin State. The state was formed on 1 November 1956.
-                </p>
+        <div class="about">
+            <h1>Welcome to Kerala!</h1>
+            <p>
+                Kerala is situated in the southwestern end of the Indian subcontinent. 
+                Kerala has a long history of art and cultural heritage and foreign trade with other countries. 
+                The state with the highest literacy rate in India, is noted for its achievements in education, 
+                health, gender equality, social justice, law and order. In addition to these, the state has the 
+                lowest infant mortality rate in the country. Kerala lies between the Arabian Sea in the West and 
+                the Western Ghats (Sahyadris) in the East with an area of 38863 sq km. It is one of the five states 
+                in the linguistic-cultural area known as South India. The neighbouring states of Kerala are Tamil Nadu 
+                and Karnataka. Mayyazhi (Mahe / Mahe) is a part of Pondicherry (Puducherry) and lies within Kerala. 
+                Though the Lakshadweeps in the Arabian Sea is part of the Union Territories, it has a close alliance 
+                with the linguistic and cultural heritage of Kerala. Before the independence of India, Kerala was 
+                one of the princely states in india. Later on 1 July 1949, the princely states of Travancore and 
+                Cochin united to form the Travancore-Cochin State. Later, When the Malabar region (formerly part 
+                of Madras state) was added to the Travancore-Cochin State. The state was formed on 1 November 1956.
+            </p>
+        </div>
+    </section>
+
+    <section class="experience">
+      
+    </section>
+
+
+    <section class="explore">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/assets /images/caravan-1920x6502.jpg" class="d-block w-100" alt="...">
             </div>
-        </section>
+            <div class="carousel-item">
+              <img src="/assets /images/parambikulam.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/assets /images/destination-wedding-banner-1920.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </section>
 
-
-        
-
-
-        
-
-
-
-
+        <script src="Js/nav.js"></script>
+        <script src="Js/main.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

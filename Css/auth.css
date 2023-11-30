@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(59, 59, 59);
+}
+.logi-container{
+    padding: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.login-form{
+    background: rgb(87, 87, 87);
+    box-shadow: 10px 10px 8px rgb(0, 0, 0);
+    width: 30rem;
+    /* height: 35rem; */
+    border-radius: 10px;
+    padding: 5%;
+    /* animation: anim 5s ease-in-out 1s infinite ; */
+}
+.login-form > h2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+form{
+    margin-top: 20px;
+}
+input,button#submitBtn{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+button:disabled{
+    opacity: .4;
+}
+input{
+    padding-left: 10px;
+}
+::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+#pass-valid-msg, #pass-pattern-msg{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin: 10px;
+    width: 100%;
+    display: none;
+}
+.valid{
+    color: green;
+}
+.valid::before{
+    position: relative;
+    left: -10px;
+    content: "✔";
+}
+.invalid{
+    color: red;
+}
+.invalid:before {
+    position: relative;
+    left: -10px;
+    content: "✖";
+}
+i{
+    position: absolute;
+    right: 0;
+    top: 37%;
+    color: #fff;
+}
+.pass-div{
+    position: relative;
+}
+
+/* 
+@keyframes anim{
+    0%{
+        box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+
+    }
+    25%{
+        box-shadow: 5px 5px rgb(17, 255, 0), 10px 10px rgb(0, 217, 255), 15px 15px rgb(234, 255, 0);
+
+    }
+    50%{
+        box-shadow: 5px 5px rgb(255, 217, 0), 10px 10px rgb(221, 0, 255), 15px 15px rgb(255, 117, 4);
+
+    }
+    75%{
+        box-shadow: 5px 5px rgb(34, 112, 34), 10px 10px rgb(252, 45, 45), 15px 15px rgb(64, 155, 246);
+
+    }
+    100%{
+        box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+
+    }
+} */

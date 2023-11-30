@@ -5,9 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/auth.css">
+
+    <script src="https://kit.fontawesome.com/5d2e8a75d6.js" crossorigin="anonymous"></script>
     <title>Kerala Tourism-Sign Up</title>
 </head>
 <body>
-    
+    <div class="logi-container">
+        <div class="login-form">
+            <h2>Sign Up</h2>
+            <form action="./successfully.html" method="">
+                <input type="text" id="username" name="user-name" placeholder="User Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <div class="pass-div">
+                    <input type="password" id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <i id="passShow-1" class="fa-solid fa-eye"></i>
+                </div>
+                <div class="pass-div">
+                    <input type="password" id="ConfirmPassword" name="Confirm-password" placeholder="Confirm Password" required>
+                    <i id="passShow-2" class="fa-solid fa-eye"></i>
+                </div>
+
+                <button type="submit" id="submitBtn" disabled>Sign up</button>
+            </form>
+            <div id="pass-valid-msg">
+                <p id="Confirm-msg" class="invalid">Password not Matching</p>
+            </div>
+            <div id="pass-pattern-msg">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+        </div>
+    </div>
+    <h6>salih km</h6>
+    <script src="/Js/main.js"></script>
 </body>
 </html>

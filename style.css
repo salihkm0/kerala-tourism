@@ -108,6 +108,103 @@ section.hero .about p{
 
 
 
+
+
+
+.logi-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    background: rgba(87, 87, 87, 0.519);
+    /* box-shadow: 10px 10px 8px rgb(0, 0, 0); */
+    width: 30rem;
+    /* height: 35rem; */
+    border-radius: 10px;
+    padding: 5%;
+    /* animation: anim 5s ease-in-out 1s infinite ; */
+}
+.login-form > h2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+form{
+    margin-top: 20px;
+}
+input,button#submitBtn{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+button:disabled{
+    opacity: .4;
+}
+input{
+    padding-left: 10px;
+}
+::placeholder{
+    color: rgb(255, 255, 255);
+}
+#pass-valid-msg, #pass-pattern-msg{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin: 10px;
+    width: 100%;
+    display: none;
+}
+.valid{
+    color: green;
+}
+.valid::before{
+    position: relative;
+    left: -10px;
+    content: "✔";
+}
+.invalid{
+    color: red;
+}
+.invalid:before {
+    position: relative;
+    left: -10px;
+    content: "✖";
+}
+i{
+    position: absolute;
+    right: 0;
+    top: 37%;
+    color: #fff;
+}
+.pass-div{
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width : 870px) {
     nav{
         height: 70px;

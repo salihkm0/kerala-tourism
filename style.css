@@ -114,7 +114,7 @@ section.hero{
   margin-top: 70px;
 
 }
-section.hero .about{
+section.hero{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,6 +124,8 @@ section.hero .about{
   margin-top: 5px;
   height: 100%;
   position: relative;
+  height: 70vh;
+
 }
 section.hero video{
   width: 100vw;
@@ -136,25 +138,97 @@ section.hero video{
   bottom: 0;
   z-index: -1;
 }
-section.hero .about h1{
-  color: #ffffff;
+
+section.about{
+  padding: 30px 70px;
+  /* margin: 20px 0; */
+  position: relative;
+  background: #6464644a;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-section.hero .about p{
-  color: #ffffff;
+section.about h1{
+  color: #f1f1f1;
+}
+section.about p{
+  color: #e3e3e3;
   margin-top: 30px;
 }
 
-
+section.about img{
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
 
 section.experience{
   padding: 30px 70px;
-  position: relative;
-  background: #ffffff;
+  background:  #e2e2e2a9 50%, #fff 50%;
+  backdrop-filter: blur(20px);
+  height: 100vh;
+  
 }
 section.experience > h1{
   color: rgb(0, 0, 0);
   text-align: center;
 }
+section.experience .card-wrapper{
+  display: grid;
+  grid-auto-flow: column;
+  overflow-y: auto;
+  margin-top: 50px;
+  gap: 1.5rem;
+  width: 100%;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+section.experience .card-wrapper::-webkit-scrollbar{
+  display: none;
+}
+section.experience .card-arrow button#prev-slid{
+  content:"❮";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+section.experience .card-arrow button#next-slid{
+  content:"❯";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+section.experience .card-arrow button.slide-btn{
+  color: #fff;
+  font-size: 30px;
+  background: #89898927;
+  backdrop-filter: blur(20px);
+  border-radius: 50%;
+  padding:5px 15px;
+  z-index: 1;
+  border: none;
+  outline: none;
+}
+section.experience .card-wrapper .card{
+  width: 400px;
+  height: 80vh;
+  margin: 0 20px;
+  background: none;
+  position: relative;
+  overflow: hidden;
+  color: #f1f1f1;
+  text-align: center;
+
+}
+section.experience .card-wrapper .card .card-body{
+  position: absolute;
+  bottom: 30px;
+}
+
 /* section.experience .carousel-inner{
   padding: 1rem;
 } */
@@ -166,9 +240,8 @@ section.experience > h1{
   padding: 1rem;
   display: block;
 } */
-section.experience .image-wrapper{
+/* section.experience .image-wrapper{
   max-width: 100%;
-  /* height: 17em; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -197,7 +270,7 @@ section.experience .card .card-body{
 section.experience .card .card-body h1{
   font-size: 28px;
   margin-top: 50px;
-} 
+}  */
 
 
 

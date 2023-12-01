@@ -121,11 +121,10 @@ section.hero{
   flex-direction: column;
   text-align: center;
   padding: 60px 10%;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   height: 100%;
   position: relative;
-  height: 70vh;
-
+  height: 500px;
 }
 section.hero video{
   width: 100vw;
@@ -191,7 +190,7 @@ section.experience{
   padding: 30px 70px;
   background:  #e2e2e2a9 50%, #fff 50%;
   backdrop-filter: blur(20px);
-  height: 100vh;
+  height: 100%;
   
 }
 section.experience > h1{

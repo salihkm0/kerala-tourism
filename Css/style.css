@@ -166,7 +166,7 @@ section.hero .hero-form form{
 }
 .location-div,.months-div,.travel-type-div{
   flex: 1 0 140px;
-  margin: 0 10px;
+  margin: 0 10px 10px 10px ;
   border: 1px solid #000;
   border-radius: 5px;
   display: flex;
@@ -191,12 +191,12 @@ section.hero form .location,section.hero form .travel-type,section.hero form .mo
 
 }
 section.hero form .submit{
-  flex: 1 0 50px;
+  flex: 1 0 80px;
   border: none;
   outline: none;
   background: #ff1b1b;
   color: #fff;
-
+  height: 40px;
 }
 section.hero form ::placeholder{
   color: #000;
@@ -311,7 +311,9 @@ section.experience .card .card-body h1{
 /* --------------things-to-do section------------- */
 
 section.things-to-do{
-  background: rgba(255, 255, 255, 0.95);
+  background:#415a77c9;
+  backdrop-filter: blur(20px);
+
   height: 100%;
   padding: 50px;
 }

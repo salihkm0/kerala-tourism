@@ -202,7 +202,7 @@ section.hero form ::placeholder{
 section.about{
   padding: 30px 70px;
   /* margin: 20px 0; */
-  position: relative;
+  /* position: relative; */
   background: #6464644a;
   backdrop-filter: blur(10px);
   width: 100%;
@@ -225,9 +225,15 @@ section.about img{
   border-radius: 5px;
 }
 
+/* ------------contact----------------  */
+
 .modal-backdrop{
   position: relative;
 }
+/* .modal{
+  position: absolute;
+  top: 0;
+} */
 .get-in-touch button{
   border: none !important;
   outline: none !important;
@@ -265,9 +271,8 @@ section.about img{
   color: #ffffff;
   /* padding: 0 10px; */
 }
+
 /* --------------experience section------------- */
-
-
 
 section.experience{
   padding: 30px 70px;
@@ -389,13 +394,59 @@ section.things-to-do .card-wrapper .card .card-body h2{
 
 }
 
-/* --------------explore section------------- */
+/* --------------packages section------------- */
 
-/* section.explore{
-  margin: 20px 0;
-  height: 70vh;
-  background: rgb(198, 198, 198);
-} */
+section.packages{
+  height: 100%;
+  width: 100%;
+  background: #001524;
+  padding: 50px;
+}
+section.packages > h1{
+  color: #bf1111;
+  text-align: center;
+  font-weight: bold;
+}
+section.packages .card-wrapper{
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section.packages .card{
+  background: none;
+  border: none;
+  margin: 2px;
+  height: 300px;
+  width: 400px;
+  padding: 0;
+}
+section.packages .card img{
+  width: 100%;
+  height: 100%;
+}
+section.packages .card .card-body{
+  position: absolute;
+  color: #fff;
+
+}
+section.packages .card-body h2{
+  font-size: 20px;
+}
+section.packages .card-body p{
+  font-size: 15px;
+}
+section.packages .card span{
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: #fff;
+  background: #bf1111;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
 
 
@@ -406,7 +457,6 @@ section.things-to-do .card-wrapper .card .card-body h2{
 
 
 /* ---------------responsive----------------- */
-
 
 @media screen and (max-width: 1160px) {
   .nav {

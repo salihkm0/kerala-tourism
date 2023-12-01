@@ -17,8 +17,8 @@ a {
   color: #fff;
   text-decoration: none;
 }
-a:hover {
-  color: rgb(193, 193, 193);
+.nav a:hover {
+  color: #ff1b1b;
   text-decoration: none;
 }
 
@@ -139,6 +139,23 @@ section.hero video{
   z-index: -1;
 }
 
+
+section.hero .welcome{
+  color: rgb(255, 255, 255);
+}
+section.hero .welcome h1{
+  font-weight: 500;
+
+}
+section.hero .welcome h1 span{
+  font-weight: 900;
+  color: #ff1b1b;
+  
+}
+
+/* --------------about section------------- */
+
+
 section.about{
   padding: 30px 70px;
   /* margin: 20px 0; */
@@ -164,6 +181,11 @@ section.about img{
   margin-top: 10px;
   border-radius: 5px;
 }
+
+
+/* --------------experience section------------- */
+
+
 
 section.experience{
   padding: 30px 70px;
@@ -228,55 +250,17 @@ section.experience .card-wrapper .card .card-body{
   position: absolute;
   bottom: 30px;
 }
-
-/* section.experience .carousel-inner{
-  padding: 1rem;
-} */
-
-/*
-.carousel-item{
-  flex: 0 0 calc(100% / 4);
-  margin-right: 0;
-  padding: 1rem;
-  display: block;
-} */
-/* section.experience .image-wrapper{
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-section.experience .image-wrapper img{
-  max-width: 100%;
-  max-height: 100%;
-}
-section.experience .card{
-  height: 500px;
-  border: none;
-  background: transparent;
-  position: relative;
-  margin: 60px .5em;
-}
-section.experience .card .card-body{
-  position: absolute;
-  color: #fff;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  padding: 0 20px;
-  text-align: center;
-}
 section.experience .card .card-body h1{
   font-size: 28px;
   margin-top: 50px;
-}  */
+}  
 
+/* --------------explore section------------- */
 
-
-
-.explore{
-  margin: 20px 0;
+section.explore{
+  /* margin: 20px 0; */
+  height: 70vh;
+  background: rgb(198, 198, 198);
 }
 
 
@@ -356,27 +340,11 @@ section.experience .card .card-body h1{
 }
 
 @media (max-width : 576px) {
-  section.experience .card .card-body{
-    top: 50%;
-  }
-  section.experience .card .card-body h1{
-    font-size: 20px;
-    margin-top: 30px;
-  } 
-  section.experience .card .card-body p{
-    font-size: 13px;
-  }
+  
 }
 
 @media (min-width : 576px) {
-  section.experience .carousel-inner{
-      display: flex;
-  }
-  section.experience .carousel-item{
-      flex: 0 0 calc(100% / 3);
-      margin-right: 0;
-      display: block;
-  }
+  
 }
 
 
@@ -396,25 +364,4 @@ section.hero .about p{
 }
 @media (max-width : 400px) {
   
-  section.experience .card {
-    margin: 0;
-    padding: 0;
-    height: 500px;
-
-  }
-  section.experience .card .card-body{
-    top: 50%;
-    
-  }
-  section.experience .card .card-body h1{
-    font-size: 15px;
-    margin-top: 15px;
-  } 
-  section.experience .card .card-body p{
-    font-size: 10px;
-  }
-  section.experience .carousel-inner{
-    /* display: flex; */
-    padding: 0rem;
-  }
 }

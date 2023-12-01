@@ -141,6 +141,7 @@ section.hero video{
 
 section.hero .welcome{
   color: rgb(255, 255, 255);
+  background: transparent;
 }
 section.hero .welcome h1{
   font-weight: 500;
@@ -149,7 +150,54 @@ section.hero .welcome h1{
 section.hero .welcome h1 span{
   font-weight: 900;
   color: #ff1b1b;
-  
+}
+
+section.hero .hero-form{
+  margin-top: 100px;
+  background-color: #ffffff77;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  width: 100%;
+  border-radius: 5px;
+}
+section.hero .hero-form form{
+  display: flex;
+  flex-wrap: wrap;
+}
+.location-div,.months-div,.travel-type-div{
+  flex: 1 0 140px;
+  margin: 0 10px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  background: transparent;
+
+}
+.location-div .fa-location-dot,.months-div .fa-calendar-days,.travel-type-div .fa-flag{
+  font-size: 16px;
+  padding: 0 5px;
+  color: #ff1b1b;
+  background: transparent;
+}
+section.hero form .location,section.hero form .travel-type,section.hero form .months{
+  height: 40px;
+  padding: 0 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+
+}
+section.hero form .submit{
+  flex: 1 0 50px;
+  border: none;
+  outline: none;
+  background: #ff1b1b;
+  color: #fff;
+
+}
+section.hero form ::placeholder{
+  color: #000;
 }
 
 /* --------------about section------------- */

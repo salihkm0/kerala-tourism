@@ -1,12 +1,20 @@
 
 section.hero{
     text-align: start;
-  }
+}
 
-.logi-container{
+.home-link{
+    margin: 40px 70px;
+}
+.home-link a:hover{
+    color: #ff1b1b;
+}
+
+.login-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: transparent;
 }
 
 .login-form{
@@ -82,4 +90,16 @@ i{
 }
 .pass-div{
     position: relative;
+}
+
+.signup-footer{
+    margin-left:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.signup-footer a{
+    color: rgb(187, 187, 187);
+}
+.signup-footer a:hover{
+    color: rgb(255, 255, 255);
 }

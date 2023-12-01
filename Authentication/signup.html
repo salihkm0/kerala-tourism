@@ -11,6 +11,9 @@
     <title>Kerala Tourism-Sign Up</title>
 </head>
 <body>
+    <div class="home-link">
+        <a href="../index.html">Home</a>
+    </div>
 
     <section class="hero logi-container">
         <video autoplay muted loop id="myVideo">
@@ -31,9 +34,12 @@
                     <input type="password" id="ConfirmPassword" name="Confirm-password" placeholder="Confirm Password" required>
                     <i id="passShow-2" class="fa-solid fa-eye"></i>
                 </div>
-
                 <button type="submit" id="submitBtn" disabled>Sign up</button>
             </form>
+            <div class="signup-footer">
+                <span><a href="./signin.html">Sign in</a></span>
+                <span><a href="">forgotten Password?</a></span>
+            </div>
             <div id="pass-valid-msg">
                 <p id="Confirm-msg" class="invalid">Password not Matching</p>
             </div>
@@ -47,7 +53,7 @@
         </div>
     </section>
         
-    <script src="../Js/auth"></script>
-    <script src="../Js/nav"></script>
+    <script src="../Js/auth.js"></script>
+    <script src="../Js/nav.js"></script>
 </body>
 </html>

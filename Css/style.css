@@ -124,6 +124,7 @@ section.hero{
   height: 100%;
   position: relative;
   height: 500px;
+  background: transparent;
 }
 section.hero video{
   width: 100vw;

@@ -27,7 +27,6 @@
     <title>Kerala Tourism</title>
   </head>
   <body>
-
     <!-- ------------header and nav------------- -->
 
     <header>
@@ -40,9 +39,9 @@
           <i class="uil uil-times navCloseBtn"></i>
           <li><a href="#home">Home</a></li>
           <li><a href="#">Tourist Hotspots</a></li>
-          <li><a href="#">Things To Do</a></li>
+          <li><a href="#things-to-do">Things To Do</a></li>
           <li><a href="#">Gallery</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="Authentication/signup.html">Login</a></li>
         </ul>
 
@@ -70,7 +69,14 @@
         <form action="">
           <div class="location-div">
             <i class="fa-solid fa-location-dot fa-fade"></i>
-            <input type="text" class="location" name="location" id="location" placeholder="WHERE TO?" required />
+            <input
+              type="text"
+              class="location"
+              name="location"
+              id="location"
+              placeholder="WHERE TO?"
+              required
+            />
           </div>
           <div class="months-div">
             <i class="fa-solid fa-calendar-days fa-fade"></i>
@@ -110,7 +116,7 @@
 
     <!-- ------------about section------------- -->
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="row">
         <div class="col-lg-5">
           <div class="about-card">
@@ -126,6 +132,56 @@
               in the West and the Western Ghats (Sahyadris) in the East with an
               area of 38863 sq km. The state was formed on 1 November 1956.
             </p>
+            <!-- Button trigger modal -->
+            <div class="get-in-touch">
+              <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+            Get in Touch
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Get in Touch
+                    </h5>
+                    <!-- <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button> -->
+                  </div>
+                  <div class="modal-body">
+                    <form action="">
+                      <input type="text" placeholder="Name">
+                      <input type="email" placeholder="Email">
+                      <textarea name="msg" id="" cols="30" rows="10" placeholder="Messege"></textarea>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn" data-bs-dismiss="modal" >
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
           </div>
         </div>
         <div class="col-lg-7">
@@ -139,7 +195,7 @@
     </section>
 
     <!-- ------------experience section------------- -->
-    
+
     <section class="experience">
       <h1>Experience Kerala</h1>
       <div class="card-arrow">
@@ -161,46 +217,66 @@
           </div>
           <div class="card">
             <div class="card-img">
-              <img src="assets /images/Theyyam2.jpg" alt="">
+              <img src="assets /images/Theyyam2.jpg" alt="" />
             </div>
             <div class="card-body">
-              <p>Welcome to Kannur, a city that boasts of a vibrant tapestry of history, culture, tradition and natural beauty. </p>
+              <p>
+                Welcome to Kannur, a city that boasts of a vibrant tapestry of
+                history, culture, tradition and natural beauty.
+              </p>
               <h1>Kannur</h1>
             </div>
           </div>
           <div class="card">
             <div class="card-img">
-              <img src="assets /images/RT-2.jpg" alt="">
+              <img src="assets /images/RT-2.jpg" alt="" />
             </div>
             <div class="card-body">
-              <p>RT Mission is the nodal agency formed by the Government of Kerala to spread and implement the ideologies and initiatives of Responsible Tourism all over the State.</p>
+              <p>
+                RT Mission is the nodal agency formed by the Government of
+                Kerala to spread and implement the ideologies and initiatives of
+                Responsible Tourism all over the State.
+              </p>
               <h1>Responsible Tourism Mission</h1>
             </div>
           </div>
           <div class="card">
             <div class="card-img">
-              <img src="assets /images/judaisam13.jpg" alt="">
+              <img src="assets /images/judaisam13.jpg" alt="" />
             </div>
             <div class="card-body">
-              <p>Judaism is an ethnic religion comprising the collective religious, cultural and legal tradition and civilization of the Jewish people. </p>
+              <p>
+                Judaism is an ethnic religion comprising the collective
+                religious, cultural and legal tradition and civilization of the
+                Jewish people.
+              </p>
               <h1>Judaism in Kerala</h1>
             </div>
           </div>
           <div class="card">
             <div class="card-img">
-              <img src="assets /images/Experience_Kerala1.jpg" alt="">
+              <img src="assets /images/Experience_Kerala1.jpg" alt="" />
             </div>
             <div class="card-body">
-              <p>Explore the tourist destinations and things to do in Kollam and Thiruvananthapuram. Check out the e-brochure and start planning your next trip to South Kerala.</p>
+              <p>
+                Explore the tourist destinations and things to do in Kollam and
+                Thiruvananthapuram. Check out the e-brochure and start planning
+                your next trip to South Kerala.
+              </p>
               <h1>Lands of Majestic Treats</h1>
             </div>
           </div>
           <div class="card">
             <div class="card-img">
-              <img src="assets /images/ecotourism.jpg" alt="">
+              <img src="assets /images/ecotourism.jpg" alt="" />
             </div>
             <div class="card-body">
-              <p>Welcome to the official website of Eco Adventure Tourism in Kerala. A trip to swooningly picturesque places that are also silent, serene, slow-moving is what travelers to the Kerala always looks for is there.</p>
+              <p>
+                Welcome to the official website of Eco Adventure Tourism in
+                Kerala. A trip to swooningly picturesque places that are also
+                silent, serene, slow-moving is what travelers to the Kerala
+                always looks for is there.
+              </p>
               <h1>Ecotourism</h1>
             </div>
           </div>
@@ -213,12 +289,12 @@
 
     <!-- ------------things-to-do section------------- -->
 
-    <section class="things-to-do">
+    <section class="things-to-do" id="things-to-do">
       <h1>Things To Do</h1>
       <div class="card-wrapper">
         <div class="card">
           <div class="card-img">
-            <img src="./assets /images/Screw-Pine-Weaving1.jpg" alt="">
+            <img src="./assets /images/Screw-Pine-Weaving1.jpg" alt="" />
           </div>
           <div class="card-body">
             <h2>Responsible Tourism</h2>
@@ -226,7 +302,7 @@
         </div>
         <div class="card">
           <div class="card-img">
-            <img src="./assets /images/ayurveda6.jpg" alt="">
+            <img src="./assets /images/ayurveda6.jpg" alt="" />
           </div>
           <div class="card-body">
             <h2>Ayurveda</h2>
@@ -234,7 +310,7 @@
         </div>
         <div class="card">
           <div class="card-img">
-            <img src="./assets /images/Paragliding.jpg" alt="">
+            <img src="./assets /images/Paragliding.jpg" alt="" />
           </div>
           <div class="card-body">
             <h2>Paragliding</h2>
@@ -242,7 +318,10 @@
         </div>
         <div class="card">
           <div class="card-img">
-            <img src="./assets /images/A-Journey-through-the-Forest.jpg" alt="">
+            <img
+              src="./assets /images/A-Journey-through-the-Forest.jpg"
+              alt=""
+            />
           </div>
           <div class="card-body">
             <h2>A Journey through the Forest</h2>
@@ -250,7 +329,7 @@
         </div>
         <div class="card">
           <div class="card-img">
-            <img src="./assets /images/scuba-diving1.jpg" alt="">
+            <img src="./assets /images/scuba-diving1.jpg" alt="" />
           </div>
           <div class="card-body">
             <h2>Scuba Diving</h2>
@@ -258,7 +337,7 @@
         </div>
         <div class="card">
           <div class="card-img">
-            <img src="./assets /images/Hiking.jpg" alt="">
+            <img src="./assets /images/Hiking.jpg" alt="" />
           </div>
           <div class="card-body">
             <h2>Hiking</h2>
@@ -269,9 +348,7 @@
 
     <!-- ------------explore section------------- -->
 
-    <section class="explore">
-
-    </section>
+    <section class="explore"></section>
 
     <!-- <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"

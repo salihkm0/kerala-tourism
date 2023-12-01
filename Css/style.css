@@ -27,7 +27,7 @@ a {
 header{
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 998;
 }
 .nav {
   position: fixed;
@@ -48,8 +48,6 @@ header{
   justify-content: space-between;
 }
 .nav .logo img{
-  /* font-size: 22px;
-  font-weight: 500; */
   width: 70px;
 }
 .nav .nav-links {
@@ -116,16 +114,9 @@ section.hero{
   flex-direction: column;
   text-align: center;
   padding: 60px 10%;
-  height: 100%;
   position: relative;
   height: 550px;
-  background: transparent;
 }
-section.hero#home{
-  background: none;
-  background-color: transparent;
-}
-
 section.hero video{
   width: 100vw;
   height: 100vh;
@@ -202,6 +193,9 @@ section.hero form ::placeholder{
   color: #000;
 }
 
+
+
+
 /* --------------about section------------- */
 
 
@@ -231,7 +225,46 @@ section.about img{
   border-radius: 5px;
 }
 
+.modal-backdrop{
+  position: relative;
+}
+.get-in-touch button{
+  border: none !important;
+  outline: none !important;
+  background: #ff1b1b;
+  color: #fff;
+  height: 40px;
+}
+.get-in-touch .modal-content{
+  background: #000000bf;
+  backdrop-filter: blur(20px);
+}
+.get-in-touch .modal-body,.get-in-touch .modal-footer,.get-in-touch .modal-title,.modal-header{
+  border: none;
+  outline: none;
+}
+.get-in-touch .modal-header  h5{
+  color: #fff;
+}
+.get-in-touch form input,.get-in-touch form textarea{
+  width: 100%;
+  height: 40px;
+  /* background-color: #ffffff7b; */
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  outline: none;
+  margin-top: 10px;
+  padding: 0 10px;
+  color: #fff;
+}
+.get-in-touch form textarea{
+  height: 80px;
 
+}
+.get-in-touch form input::placeholder,.get-in-touch form textarea::placeholder{
+  color: #ffffff;
+  /* padding: 0 10px; */
+}
 /* --------------experience section------------- */
 
 

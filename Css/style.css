@@ -450,7 +450,51 @@ section.packages .card span{
 
 
 
+section.gallery{
+  width: 100%;
+  height: 100%;
+  padding: 50px 70px;
+}
+section.gallery > h1{
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+section.gallery .card-wrapper{
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section.gallery .card{
+  background: none;
+  border: none;
+  margin: 5px;
+  height: 300px;
+  width: 300px;
+  padding: 0;
+}
+section.gallery .more{
+  text-align: center;
+}
+section.gallery .more a{
+  color: #fff;
+  background: #bf1111;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+section.gallery .more a:hover{
+  color: rgb(198, 198, 198);
+}
+section.main-gallery{
+  background: #001524;
+  margin-top: 70px;
+  padding-bottom: 10px;
+  height: 100%;
 
+}
 
 
 

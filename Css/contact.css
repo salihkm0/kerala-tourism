@@ -1,0 +1,92 @@
+section.contact-container{
+    color: rgb(255, 255, 255);
+    /* height: 100vh; */
+    padding: 0;
+    margin-top: 50vh;
+}
+.about-section{
+    background: rgba(22, 22, 22, 0.405);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-section > h1{
+    text-align: center;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+.about-section .about-body{
+    width: 70%;
+    margin: 40px 0;
+}
+.about-section .about-body h3{
+    font-size: 20px;
+}
+.about-section .about-body p{
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+
+
+.contact-section{
+    width: 100%;
+    height: auto;
+    background-color: #05050580;
+    backdrop-filter: blur(10px);
+    padding: 40px 60px;
+}
+.contact-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-info{
+    padding: 20px;
+    width: 100%;
+
+}
+.contact-section h1,.contact-section p{
+    color: rgb(255, 255, 255);
+    margin: 10px;
+  }
+  .contact-info form{
+    margin-top: 40px;
+    width: 100%;
+
+    /* width: 50%; */
+  }
+  .contact-info form input,.contact-info form textarea, .contact-info form button{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    margin-top: 10px;
+    padding: 0 10px;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .contact-info form textarea{
+    height: 80px;
+  
+  }
+  .contact-info form input::placeholder,.contact-info form textarea::placeholder{
+    color: #ffffff;
+    /* padding: 0 10px; */
+  }
+.contact-info form button{
+    background:  rgb(232, 0, 0);
+    border: none;
+
+}

@@ -1,14 +1,19 @@
+*{
+    /* border: 2px solid #42ff09; */
+}
+
 section.contact-container{
     color: rgb(255, 255, 255);
-    /* height: 100vh; */
+    height: 100%;
+    width: 100%;
     padding: 0;
-    margin-top: 50vh;
+    margin-top: 40vh;
 }
 .about-section{
     background: rgba(22, 22, 22, 0.405);
     backdrop-filter: blur(10px);
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 50px;
     text-align: start;
     display: flex;
@@ -19,6 +24,7 @@ section.contact-container{
 .about-section > h1{
     text-align: center;
     border-bottom: 3px solid rgb(255, 255, 255);
+    width: 30%;
     padding-bottom: 20px;
 }
 .about-section .about-body{
@@ -41,6 +47,24 @@ section.contact-container{
     background-color: #05050580;
     backdrop-filter: blur(10px);
     padding: 40px 60px;
+}
+.row{
+    margin-top: 20px !important;
+}
+.contact-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.contact-details > div{
+    padding: 30px 40px;
+    cursor: pointer;
+}
+.contact-details > div i{
+    padding: 0 5px;
+    color: rgb(255, 0, 0);
 }
 .contact-body{
     display: flex;

@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="../Css/style.css" />
     <link rel="stylesheet" href="../Css/auth.css">
+    
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -54,41 +55,20 @@
     </header>
 
     <!-- ----------hero and form------------ -->
-
-    <section class="hero login-container">
+    
+    <section class="hero logi-container">
         <video autoplay muted loop id="myVideo">
             <source src="../assets /videos/Heritage___Kerala_-_World_s_Greatest_Place(2160p).webm" type="video/mp4">
         </video>
 
-
         <div class="login-form">
-            <h2>Sign Up</h2>
+            <h2>Sign In</h2>
             <form action="/index.html" method="">
-                <input type="text" id="username" name="user-name" placeholder="User Name" required>
                 <input type="email" id="email" name="email" placeholder="Email" required>
-                <div class="pass-div">
-                    <input type="password" id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                    <i id="passShow-1" class="fa-solid fa-eye"></i>
-                </div>
-                <div class="pass-div">
-                    <input type="password" id="ConfirmPassword" name="Confirm-password" placeholder="Confirm Password" required>
-                    <i id="passShow-2" class="fa-solid fa-eye"></i>
-                </div>
-                <button type="submit" id="submitBtn" disabled>Sign up</button>
+                <button type="submit" id="submitBtn">Submit</button>
             </form>
             <div class="signup-footer">
-                <span><a href="./signin.html">Sign in</a></span>
-                <span><a href="./forgotten.html">forgotten Password?</a></span>
-            </div>
-            <div id="pass-valid-msg">
-                <p id="Confirm-msg" class="invalid">Password not Matching</p>
-            </div>
-            <div id="pass-pattern-msg">
-                <h3>Password must contain the following:</h3>
-                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-                <p id="number" class="invalid">A <b>number</b></p>
-                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                <span><a href="./signin.html">Sign In</a></span>
             </div>
         </div>
     </section>
@@ -96,27 +76,27 @@
     <!-- ---------------footer section -------------- -->
 
     <footer>
-      <div class="footer-container">
-
-        <p>&copy; 2023 Travel Guide | Design by: Muhammed Salih Km <a href="#" target="_blank"></a></p>
-      </div>
-    </footer>
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script> -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../Js/auth.js"></script>
-    <script src="../Js/nav.js"></script>
-  </body>
-</html>
-
-
-
-
-<!-- 2023 Travel Guide | Design by:Muhammed Salih Km -->
+        <div class="footer-container">
+  
+          <p>&copy; 2023 Travel Guide | Design by: Muhammed Salih Km <a href="#" target="_blank"></a></p>
+        </div>
+      </footer>
+      <!-- <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"
+      ></script> -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+      <script src="../Js/main.js"></script>
+      <script src="../Js/nav.js"></script>
+    </body>
+  </html>
+  
+  
+  
+  
+  <!-- 2023 Travel Guide | Design by:Muhammed Salih Km -->

@@ -1,13 +1,7 @@
 
 section.hero{
     text-align: start;
-}
-
-.home-link{
-    margin: 40px 70px;
-}
-.home-link a:hover{
-    color: #ff1b1b;
+    height:60rem ;
 }
 
 .login-container{
@@ -15,6 +9,7 @@ section.hero{
     justify-content: center;
     align-items: center;
     background: transparent;
+    
 }
 
 .login-form{
@@ -24,6 +19,8 @@ section.hero{
     /* height: 35rem; */
     border-radius: 10px;
     padding: 5%;
+    margin-top: 100px;
+
     /* animation: anim 5s ease-in-out 1s infinite ; */
 }
 .login-form > h2{
@@ -82,7 +79,7 @@ section.hero .login-form form ::placeholder{
     left: -10px;
     content: "✖";
 }
-i{
+.login-form i{
     position: absolute;
     right: 0;
     top: 37%;

@@ -12,6 +12,7 @@ ul{
 }
 body {
   background: #f0faff;
+  position: relative;
 }
 a {
   color: #fff;

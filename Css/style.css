@@ -527,6 +527,40 @@ section.main-gallery .gallery-card-wrapper .photos img{
   border-radius: 5px;
 }
 
+/* --------------Top Destinations section------------- */
+
+section.top-destinations{
+  width: 100%;
+  height: 100%;
+  padding: 50px 70px;
+  background: #ffffff;
+}
+
+section.top-destinations > h1{
+  color: #bf1111;
+  text-align: center;
+  font-weight: bold;
+}
+section.top-destinations .destinations-wrapper{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section.top-destinations .destinations-wrapper .destination{
+  background: #d00000 ;
+  outline: 5px solid rgb(195, 0, 0);
+  outline-style: double;
+  color: rgb(255, 255, 255);
+  padding: 20px 40px;
+  margin: 20px;
+  border-radius: 5px;
+  min-width: 370px;
+}
+section.top-destinations .destinations-wrapper .destination h2{
+  font-size: 20px;
+}
 
 
 /* ---------------responsive----------------- */
@@ -597,7 +631,19 @@ section.main-gallery .gallery-card-wrapper .photos img{
 }
 
 @media (max-width : 576px) {
-  
+  section.top-destinations{
+    padding: 50px 10%;
+  }
+  section.top-destinations .destinations-wrapper{
+    justify-content: space-around;
+    width: 100%;
+  }
+  section.top-destinations .destinations-wrapper .destination{
+    min-width: 100%;
+    text-align: center;
+    padding: 20px 10%;
+    margin: 30px;
+  }
 }
 
 @media (min-width : 576px) {
@@ -634,4 +680,8 @@ section.hero .about p{
   section.main-gallery h1{
     font-size: 1.5em;
   }
+  section.top-destinations .destinations-wrapper .destination h2{
+    font-size: 15px;
+  }
+
 }

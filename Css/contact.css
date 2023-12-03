@@ -116,3 +116,11 @@ section.contact-container{
     border: none;
 
 }
+
+@media (max-width:600px) {
+    .contact-section{
+        padding: 50px 20px;
+
+    }
+    
+}

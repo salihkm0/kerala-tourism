@@ -257,29 +257,29 @@ section.experience .card-wrapper{
 section.experience .card-wrapper::-webkit-scrollbar{
   display: none;
 }
-/* section.experience .card-arrow button#prev-slid{
+section.experience .card-arrow button#prev-slid{
   content:"❮";
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 10px;
 }
 section.experience .card-arrow button#next-slid{
   content:"❯";
   position: absolute;
-  top: 50%;
+  top: 55%;
   right: 10px;
-} */
-/* section.experience .card-arrow button.slide-btn{
+}
+section.experience .card-arrow button.slide-btn{
   color: #fff;
   font-size: 30px;
-  background: #89898927;
-  backdrop-filter: blur(20px);
-  border-radius: 50%;
+  background: #0000009c;
+  backdrop-filter: blur(10px);
+  border-radius: 25%;
   padding:5px 15px;
   z-index: 1;
   border: none;
   outline: none;
-} */
+}
 section.experience .card-wrapper .card{
   width: 400px;
   height: 100%;
@@ -608,6 +608,23 @@ footer .footer-container p{
 @media (max-width : 600px) {
   section.experience{
     padding:30px 10px ;
+  }
+  section.experience .card-arrow button.slide-btn{
+    color: #fff;
+    font-size: 15px;
+    padding:15px 10px;
+    border-radius: 0;
+    background: #0000009c;
+    backdrop-filter: blur(10px);
+  }
+  section.experience .card-arrow button#prev-slid{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+  }
+  section.experience .card-arrow button#next-slid{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
   section.experience .card-wrapper{
     height: 500px;

@@ -45,13 +45,13 @@ const initSlider = () => {
           cardList.scrollBy({ left : scrollAmount, behavior : 'smooth'})
       })
   })
-  // const handleSlideButtons = () => {
-  //     sliderButtons[0].style.display = cardList.scrollLeft <= 0 ? 'none' : 'block';
-  //     sliderButtons[1].style.display = cardList.scrollLeft >= maxScrolLeft ? 'none' : 'block';
-  // }
+  const handleSlideButtons = () => {
+      sliderButtons[0].style.display = cardList.scrollLeft <= 0 ? 'none' : 'block';
+      sliderButtons[1].style.display = cardList.scrollLeft >= maxScrolLeft ? 'none' : 'block';
+  }
   
-  // cardList.addEventListener('scroll' , ()=> {
-  //     handleSlideButtons();
-  // })
+  cardList.addEventListener('scroll' , ()=> {
+      handleSlideButtons();
+  })
 }
-// window.addEventListener("load",initSlider)
+window.addEventListener("load",initSlider)

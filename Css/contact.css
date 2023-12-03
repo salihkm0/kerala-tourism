@@ -7,7 +7,7 @@ section.contact-container{
     height: 100%;
     width: 100%;
     padding: 0;
-    margin-top: 40vh;
+    margin-top: 65px;
     display: block;
 
 }
@@ -48,7 +48,7 @@ section.contact-container{
     height: auto;
     background-color: #05050580;
     backdrop-filter: blur(10px);
-    padding: 40px 60px;
+    padding: 30vh 60px;
 }
 .row{
     margin-top: 20px !important;

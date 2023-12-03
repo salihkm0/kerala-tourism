@@ -23,11 +23,11 @@ section.hero{
 }
 .dist-section{
     width: 100%;
-    backdrop-filter: blur(2px);
-    background: rgba(0, 0, 0, 0.258);
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.433);
 }
 .dist-section > h1{
-    color: #fff;
+    color: rgb(221, 0, 0);
     /* border-bottom: 2px solid #fff; */
 
 }
@@ -61,14 +61,14 @@ section.hero{
     background: rgba(0, 0, 0, 0.345);
 } */
 .places-container{
-    background: #fff;
+    background: #001524c4;
+    backdrop-filter: blur(20px);
     width: 100%;
     padding: 40px 80px;
 }
 .places-container > h2{
     text-align: center;
-    color: black;
-
+    color: rgb(202, 0, 0);
 }
 .places-container .place{
     margin: 60px 0;
@@ -80,11 +80,12 @@ section.hero{
     height: 350px;
 }
 .places-container .place .place-body{
-    color: rgb(83, 83, 83);
+    color: rgb(255, 255, 255);
 }
 .places-container .place .place-body h3{
     font-size: 22px;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 10px;
 }
 .places-container .place .place-body p{
     margin-top: 20px;
@@ -96,3 +97,72 @@ section.hero{
     width: 100%;
     height: 100%;
 }
+.places-container .dist-btn{
+    width: 100%;
+    text-align: center;
+}
+.places-container .dist-btn button{
+    color: #fff;
+    background: #bf1111;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+
+/*------------------------- Responsive --------------------- */
+
+@media(min-width: 768px) and (max-width : 1100px) {
+    .places-container{
+        padding: 40px 40px;
+    }
+    .places-container .place .place-body h3{
+        font-size: 22px;
+    }
+    .places-container .place .place-body p{
+        margin-top: 15px;
+    }
+    .places-container .place .place-body p span.dis-none{
+        display: none;
+    }
+}
+@media (max-width : 768px){
+    .places-container .place {
+        border-bottom: 2px solid  rgb(252, 252, 252) ;
+        /* border-style: dashed; */
+        padding-bottom: 20px;
+    }
+    
+    .places-container .place .place-body h3{
+        border-bottom: none;
+        margin-top: 20px;
+    }
+
+}
+@media (max-width : 550px){
+    .places-container{
+        padding: 40px 10px;
+    }
+    section.hero{
+        padding: 170px 20px;
+    }
+    .dist-section > p{
+        padding: 0;
+    }
+} 
+@media (max-width : 375px){
+    .places-container .place img.main-img{
+        width: 100%;
+        height: 270px;
+    }
+}
+
+
+
+
+
+
+

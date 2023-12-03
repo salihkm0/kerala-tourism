@@ -25,7 +25,7 @@
       href="../assets /images/kerala-logo.png"
       type="image/x-icon"
     />
-    <title>Kerala Tourism</title>
+    <title>Kerala Tourism-Alappuzha</title>
   </head>
   <body>
     <!-- ------------header and nav------------- -->
@@ -38,12 +38,13 @@
         /></a>
         <ul class="nav-links">
           <i class="uil uil-times navCloseBtn"></i>
-          <li><a href="../index.html../index.html#home">Home</a></li>
+          <li><a href="../index.html#home">Home</a></li>
           <li><a href="../index.html#packages">Tour Packages</a></li>
           <li><a href="../index.html#things-to-do">Things To Do</a></li>
           <li><a href="../index.html#gallery">Gallery</a></li>
-          <li><a href="../index.html#about">About Us</a></li>
-          <li><a href="../Authentication/signin.html">Login</a></li>
+          <!-- <li><a href="../index.html#about">About Us</a></li> -->
+          <li><a href="../contact.html">Contact Us</a></li>
+          <!-- <li><a href="../Authentication/signin.html">Login</a></li> -->
         </ul>
         <i class="uil uil-search search-icon" id="searchIcon"></i>
         <div class="search-box">
@@ -52,97 +53,105 @@
         </div>
       </nav>
     </header>
+    <!--------------------- districts background --------------->
 
-    <!-- ----------hero and form------------ -->
+    <div class="login-bg">
+      <!-- <img src="./images/thiruvananthapuram-1.jpeg" alt="" /> -->
+    </div>
 
-    <section class="hero login-container">
-      <video autoplay muted loop id="myVideo">
-        <source
-          src="../assets /videos/Heritage___Kerala_-_World_s_Greatest_Place(2160p).webm"
-          type="video/mp4"
-        />
-      </video>
+    <!--------------------- Login start--------------->
 
-      <div class="login-form">
-        <h2>Sign Up</h2>
-        <form action="/index.html" method="">
-          <input
-            type="text"
-            id="username"
-            name="user-name"
-            placeholder="User Name"
-            required
-          />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-          />
-          <div class="pass-div">
+    <section class="hero login-section">
+      <h1>Welcome to Kerala</h1>
+      <p>Experience the beauty of Kerala with us!</p>
+      <div class="login-container">
+        <div class="login-form">
+          <h3>Sign In</h3>
+          <form action="../index.html" method="">
             <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Password"
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              type="text"
+              id="username"
+              name="user-name"
+              placeholder="User Name"
               required
             />
-            <i id="passShow-1" class="fa-solid fa-eye"></i>
-          </div>
-          <div class="pass-div">
             <input
-              type="password"
-              id="ConfirmPassword"
-              name="Confirm-password"
-              placeholder="Confirm Password"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
               required
             />
-            <i id="passShow-2" class="fa-solid fa-eye"></i>
+            <div class="pass-div">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                required
+              />
+              <i id="passShow-1" class="fa-solid fa-eye"></i>
+            </div>
+            <div class="pass-div">
+              <input
+                type="password"
+                id="ConfirmPassword"
+                name="Confirm-password"
+                placeholder="Confirm Password"
+                required
+              />
+              <i id="passShow-2" class="fa-solid fa-eye"></i>
+            </div>
+            <button type="submit" id="submitBtn" disabled>Sign Up</button>
+          </form>
+          <div class="signup-footer">
+            <span><a href="./signin.html">Sign in</a></span>
+            <span><a href="./forgotten.html">forgotten Password?</a></span>
           </div>
-          <button type="submit" id="submitBtn" disabled>Sign up</button>
-        </form>
-        <div class="signup-footer">
-          <span><a href="./signin.html">Sign in</a></span>
-          <span><a href="./forgotten.html">forgotten Password?</a></span>
-        </div>
-        <div id="pass-valid-msg">
-          <p id="Confirm-msg" class="invalid">Password not Matching</p>
-        </div>
-        <div id="pass-pattern-msg">
-          <h3>Password must contain the following:</h3>
-          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-          <p id="capital" class="invalid">
-            A <b>capital (uppercase)</b> letter
-          </p>
-          <p id="number" class="invalid">A <b>number</b></p>
-          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+          <div id="pass-valid-msg">
+            <p id="Confirm-msg" class="invalid">Password not Matching</p>
+          </div>
+          <div id="pass-pattern-msg">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">
+              A <b>capital (uppercase)</b> letter
+            </p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ---------------footer section -------------- -->
 
-    <!-- <footer>
+    <!--------------------- Login end end--------------->
+
+    <!----------------------- footer start--------------- -->
+    <footer>
       <div class="footer-container">
-
-        <p>&copy; 2023 Travel Guide | Design by: Muhammed Salih Km <a href="#" target="_blank"></a></p>
+        <p>
+          &copy; 2023 Travel Guide | Design by: Muhammed Salih Km
+          <a href="#" target="_blank"></a>
+        </p>
       </div>
-    </footer> -->
+    </footer>
+
+    <!----------------------- footer end --------------- -->
+
     <!-- <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script> -->
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+          ></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="../Js/auth.js"></script>
+    <script src="../Js/main.js"></script>
     <script src="../Js/nav.js"></script>
+    <script src="../Js/auth.js"></script>
   </body>
 </html>
-
-<!-- 2023 Travel Guide | Design by:Muhammed Salih Km -->

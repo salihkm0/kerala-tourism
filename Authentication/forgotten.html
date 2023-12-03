@@ -12,7 +12,6 @@
     />
     <link rel="stylesheet" href="../Css/style.css" />
     <link rel="stylesheet" href="../Css/auth.css" />
-
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -26,7 +25,7 @@
       href="../assets /images/kerala-logo.png"
       type="image/x-icon"
     />
-    <title>Kerala Tourism</title>
+    <title>Kerala Tourism-Alappuzha</title>
   </head>
   <body>
     <!-- ------------header and nav------------- -->
@@ -39,12 +38,13 @@
         /></a>
         <ul class="nav-links">
           <i class="uil uil-times navCloseBtn"></i>
-          <li><a href="../index.html../index.html#home">Home</a></li>
+          <li><a href="../index.html#home">Home</a></li>
           <li><a href="../index.html#packages">Tour Packages</a></li>
           <li><a href="../index.html#things-to-do">Things To Do</a></li>
           <li><a href="../index.html#gallery">Gallery</a></li>
-          <li><a href="../index.html#about">About Us</a></li>
-          <li><a href="../Authentication/signin.html">Login</a></li>
+          <!-- <li><a href="../index.html#about">About Us</a></li> -->
+          <li><a href="../contact.html">Contact Us</a></li>
+          <!-- <li><a href="../Authentication/signin.html">Login</a></li> -->
         </ul>
         <i class="uil uil-search search-icon" id="searchIcon"></i>
         <div class="search-box">
@@ -53,48 +53,58 @@
         </div>
       </nav>
     </header>
+    <!--------------------- districts background --------------->
 
-    <!-- ----------hero and form------------ -->
+    <div class="login-bg">
+      <!-- <img src="./images/thiruvananthapuram-1.jpeg" alt="" /> -->
+    </div>
 
-    <section class="hero logi-container">
-      <video autoplay muted loop id="myVideo">
-        <source
-          src="../assets /videos/Heritage___Kerala_-_World_s_Greatest_Place(2160p).webm"
-          type="video/mp4"
-        />
-      </video>
+    <!--------------------- Login start--------------->
 
-      <div class="login-form">
-        <h2>Sign In</h2>
-        <form action="/index.html" method="">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-          />
-          <button type="submit" id="submitBtn">Submit</button>
-        </form>
-        <div class="signup-footer">
-          <span><a href="./signin.html">Sign In</a></span>
+    <section class="hero login-section">
+      <h1>Welcome to Kerala</h1>
+      <p>Experience the beauty of Kerala with us!</p>
+      <div class="login-container">
+        <div class="login-form">
+          <h3>forgotten Password?</h3>
+          <form action="./signin.html" method="">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <button type="submit" id="submitBtn">Reset Password</button>
+          </form>
+          <div class="signup-footer">
+            <span><a href="./signup.html">Sign in</a></span>
+            <span><a href="./forgotten.html">Sign up</a></span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ---------------footer section -------------- -->
 
-    <!-- <footer>
-        <div class="footer-container">
-  
-          <p>&copy; 2023 Travel Guide | Design by: Muhammed Salih Km <a href="#" target="_blank"></a></p>
-        </div>
-      </footer> -->
+    <!--------------------- Login end end--------------->
+
+    <!----------------------- footer start--------------- -->
+    <footer>
+      <div class="footer-container">
+        <p>
+          &copy; 2023 Travel Guide | Design by: Muhammed Salih Km
+          <a href="#" target="_blank"></a>
+        </p>
+      </div>
+    </footer>
+
+    <!----------------------- footer end --------------- -->
+
     <!-- <script
-        src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-        crossorigin="anonymous"
-      ></script> -->
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+          ></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -102,7 +112,6 @@
     ></script>
     <script src="../Js/main.js"></script>
     <script src="../Js/nav.js"></script>
+    <script src="../Js/auth.js"></script>
   </body>
 </html>
-
-<!-- 2023 Travel Guide | Design by:Muhammed Salih Km -->

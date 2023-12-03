@@ -1,15 +1,10 @@
-
-
-.login-container{
-    background: transparent;
-    height:calc(100vh - 60px);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+*{
+    /* border: 1px solid rgb(85, 255, 0); */
 }
-.login-hero video{
+
+
+
+.login-bg{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -19,32 +14,57 @@
     top: 0;
     bottom: 0;
     z-index: -1;
+    background: url('../assets /images/kerala-bg-2.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.login-form{
-    background: rgba(87, 87, 87, 0.519);
-    box-shadow: 10px 10px 8px rgb(0, 0, 0);
-    height:100%;
+section.hero{
+    margin-top: 0;
+    padding-top: 200px;
+    height: 100%;
+}
+
+.login-section{
     width: 100%;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.433);
+    color: rgb(226, 226, 226);
+}
+.login-section > h1{
+    color: rgb(214, 0, 0);
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 500px; */
+    width: 100%;
+
+}
+.login-container .login-form{
+    width: 50%;
     border-radius: 10px;
     padding: 5%;
+    color: #fff;
 }
-.login-form > h2{
+.login-container .login-form > h3{
     text-align: center;
     color: white;
     font-size: 40px;
-    font-weight: 900;
-
+    /* font-weight: 900; */
 }
-.login-form form{
+.login-container form {
     margin-top: 20px;
-    width: 50%;
 }
-input,button#submitBtn{
+.login-container form input,.login-container form button#submitBtn{
     width: 100%;
     height: 40px;
     background: transparent;
     border: 1px solid black;
-    margin: 10px;
+    /* background: rgba(2, 2, 2, 0.053); */
+    backdrop-filter: blur(1px);
+    margin: 10px 0;
     border-radius: 5px;
     color: #fff;
     outline: none;
@@ -52,56 +72,92 @@ input,button#submitBtn{
 button:disabled{
     opacity: .4;
 }
-input{
+.login-container form input{
     padding-left: 10px;
 }
-section.hero .login-form form ::placeholder{
+.login-container form input::placeholder{
     color: rgb(255, 255, 255);
 }
-#pass-valid-msg, #pass-pattern-msg{
-    padding: 10px 20px;
+.login-container .login-form #pass-valid-msg, #pass-pattern-msg{
+    padding: 10px 30px;
     border-radius: 5px;
     border: 1px solid #000;
-    margin: 10px;
+    /* background: rgba(0, 0, 0, 0.077); */
+    backdrop-filter: blur(5px);
+    margin: 10px 0;
     width: 100%;
     display: none;
+    text-align: start;
 }
-#pass-pattern-msg h3{
-    color: #fff;
+.login-container .login-form #pass-pattern-msg h3{
+    font-size: 20px;
 }
-.valid{
+.login-container .login-form .valid{
     color: green;
 }
-.valid::before{
+.login-container .login-form .valid::before{
     position: relative;
     left: -10px;
     content: "✔";
 }
-.invalid{
+.login-container .login-form .invalid{
     color: red;
 }
-.invalid:before {
+.login-container .login-form .invalid:before {
     position: relative;
     left: -10px;
     content: "✖";
 }
-.login-form i{
+.login-container .login-form i{
     position: absolute;
-    right: 0;
+    right: 5px;
     top: 37%;
     color: #fff;
 }
-.pass-div{
+.login-container .login-form .pass-div{
     position: relative;
 }
+.login-container .login-form .signup-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.login-container .login-form .signup-footer a:hover{
+    color: rgb(223, 223, 223);
+}
 
-.signup-footer{
-    margin-left:10px;
-    justify-self: auto;
+
+/* ------------responsive------------- */
+
+
+@media (max-width:1200px) {
+    .login-container .login-form{
+        width:75%;
+    }
 }
-.signup-footer a{
-    color: rgb(187, 187, 187);
+@media (max-width:1000px) {
+    .login-container .login-form{
+        width: 100%;
+    }
 }
-.signup-footer a:hover{
-    color: rgb(255, 255, 255);
+@media (max-width:600px) {
+    section.hero{
+        padding: 160px 0;
+    }
+    .login-section > h1{
+        font-size: 22px;
+    }
+    .login-section > p{
+        font-size: 16px;
+    }
+    .login-container .login-form > h3{
+        font-size: 22px;
+    }
+    .login-container .login-form #pass-pattern-msg h3{
+        font-size: 16px;
+    }
 }
+
+
+
+

@@ -54,4 +54,4 @@ const initSlider = () => {
   //     handleSlideButtons();
   // })
 }
-window.addEventListener("load",initSlider)
+// window.addEventListener("load",initSlider)

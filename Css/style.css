@@ -231,7 +231,7 @@ section.about img{
 
 section.experience{
   padding: 30px 70px;
-  background:  #e2e2e2a9 50%, #fff 50%;
+  /* background:  #e2e2e2a9 50%, #fff 50%; */
   backdrop-filter: blur(20px);
   height: 100%;
   
@@ -372,7 +372,7 @@ section.packages .card-wrapper{
 section.packages .card{
   background: none;
   border: none;
-  margin: 2px;
+  margin: 10px 2px;
   height: 300px;
   width: 400px;
   padding: 0;
@@ -517,8 +517,7 @@ section.top-destinations .destinations-wrapper .destination h2{
   font-size: 20px;
 }
 
-
-
+/* --------------Footer section------------- */
 
 footer{
   width: 100%;
@@ -610,11 +609,21 @@ footer .footer-container p{
   section.experience{
     padding:30px 10px ;
   }
-  section.top-destinations{
-    padding: 50px 10%;
+  section.experience .card-wrapper{
+    height: 500px;
+  }
+  section.experience .card-wrapper .card{
+    width: 300px;
+    height: 100%;
+    margin: 0 20px;
+  
+  }
+  section.experience .card-wrapper .card img{
+    width: 100%;
+    height: 100%;
   }
   section.top-destinations .destinations-wrapper{
-    justify-content: center;
+    /* justify-content: center; */
     margin: 0;
     padding: 0;
     width: 100%;
@@ -625,13 +634,36 @@ footer .footer-container p{
   section.top-destinations .destinations-wrapper .destination{
     min-width: 100%;
     text-align: center;
-    padding: 20px 10%;
-    margin: 30px;
+    padding: 10px;
+    width: 200px;
+    margin: 20px 10px;
   }
+  section.top-destinations .destinations-wrapper .destination h2{
+    font-size: 15px;
+  }
+  section.about{
+    padding: 30px 20px;
+  }
+  section.about img{
+    width: 100%;
+    height: 400px;
+  }
+  section.things-to-do,section.packages,section.gallery ,section.top-destinations{
+    padding: 50px 20px;
+  }
+
+
+
+
+
+
 }
 
-@media (min-width : 576px) {
-  
+@media (max-width : 350px) {
+  section.about img{
+    width: 100%;
+    height: 200px;
+  }
 }
 
 
@@ -663,9 +695,6 @@ section.hero .about p{
 @media (max-width : 480px) {
   section.main-gallery h1{
     font-size: 1.5em;
-  }
-  section.top-destinations .destinations-wrapper .destination h2{
-    font-size: 15px;
   }
 
 }

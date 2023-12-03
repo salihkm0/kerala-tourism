@@ -1,27 +1,32 @@
 
-section.hero{
-    text-align: start;
-    height:60rem ;
-}
 
 .login-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: transparent;
-    
+    height:calc(100vh - 60px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
-
+.login-hero video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
 .login-form{
     background: rgba(87, 87, 87, 0.519);
     box-shadow: 10px 10px 8px rgb(0, 0, 0);
-    width: 30rem;
-    /* height: 35rem; */
+    height:100%;
+    width: 100%;
     border-radius: 10px;
     padding: 5%;
-    margin-top: 100px;
-
-    /* animation: anim 5s ease-in-out 1s infinite ; */
 }
 .login-form > h2{
     text-align: center;
@@ -30,8 +35,9 @@ section.hero{
     font-weight: 900;
 
 }
-form{
+.login-form form{
     margin-top: 20px;
+    width: 50%;
 }
 input,button#submitBtn{
     width: 100%;
@@ -91,8 +97,7 @@ section.hero .login-form form ::placeholder{
 
 .signup-footer{
     margin-left:10px;
-    display: flex;
-    justify-content: space-between;
+    justify-self: auto;
 }
 .signup-footer a{
     color: rgb(187, 187, 187);

@@ -5,10 +5,10 @@ const mainImgOne = document.getElementById('mainImgOne')
 const smallImgOne = document.getElementsByClassName('smallImgOne')
 console.log(mainImgOne,smallImgOne)
 
-smallImgOne[0].onclick = () => mainImgOne.src = smallImgOne[0].src;
-smallImgOne[1].onclick = () => mainImgOne.src = smallImgOne[1].src;
-smallImgOne[2].onclick = () => mainImgOne.src = smallImgOne[2].src;
-smallImgOne[3].onclick = () => mainImgOne.src = smallImgOne[3].src;
+smallImgOne[0].onmouseover = () => mainImgOne.src = smallImgOne[0].src;
+smallImgOne[1].onmouseover = () => mainImgOne.src = smallImgOne[1].src;
+smallImgOne[2].onmouseover = () => mainImgOne.src = smallImgOne[2].src;
+smallImgOne[3].onmouseover = () => mainImgOne.src = smallImgOne[3].src;
 
 // ---------------place Two img ----------------
 

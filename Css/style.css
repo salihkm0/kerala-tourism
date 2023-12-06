@@ -510,19 +510,69 @@ section.top-destinations .destinations-wrapper{
   justify-content: space-evenly;
   align-items: center;
 }
-section.top-destinations .destinations-wrapper .destination{
-  background: #d00000 ;
-  outline: 5px solid rgb(195, 0, 0);
-  outline-style: double;
-  color: rgb(255, 255, 255);
-  padding: 20px 40px;
+section.top-destinations .destinations-wrapper .card{
+  width: 300px;
+  height: 200px;
+  border: none;
+  overflow: hidden;
   margin: 20px;
-  border-radius: 5px;
-  min-width: 370px;
+  
 }
+section.top-destinations .destinations-wrapper .destination{
+  border: none;
+  text-align: center;
+}
+section.top-destinations .destinations-wrapper .destination img{
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+section.top-destinations .destinations-wrapper .card .card-body{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  bottom: 0;
+  transition:all .5s ease-in;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.524);
+
+}
+/* section.top-destinations .destinations-wrapper .card:hover .card-body{
+  background: rgba(0, 0, 0, 0.524);
+
+} */
 section.top-destinations .destinations-wrapper .destination h2{
   font-size: 20px;
+  /* width: 100%; */
+  transition: .5s ease-in;
+  padding: 30px 0;
+  color: rgb(255, 255, 255);
+  
 }
+/* section.top-destinations .destinations-wrapper .card:hover .destination h2{
+  padding: 30px 0;
+  margin-top: 0px;
+  color: rgb(255, 255, 255);
+
+} */
+section.top-destinations .destinations-wrapper .card .card-body button{
+  transition:all .5s ease-in;
+  background: rgba(255, 0, 0, 0.753);
+  backdrop-filter: blur(20px);
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* section.top-destinations .destinations-wrapper .card:hover .card-body button{
+  display: inline-block;
+
+} */
+
+
+
 
 /* --------------Footer section------------- */
 
@@ -555,6 +605,7 @@ footer .footer-container p{
     right: 150px;
   }
 }
+
 @media screen and (max-width: 950px) {
   .nav {
     padding: 15px 50px;
@@ -563,6 +614,17 @@ footer .footer-container p{
   .nav .search-box {
     right: 100px;
     max-width: 400px;
+  }
+  section.top-destinations .destinations-wrapper .card .card-body{
+    background: rgba(0, 0, 0, 0.524);
+  }
+  section.top-destinations .destinations-wrapper .card .destination h2{
+    padding: 30px 0;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+  }
+  section.top-destinations .destinations-wrapper .card .card-body button{
+    display: inline-block;
   }
 }
 @media screen and (max-width: 768px) {

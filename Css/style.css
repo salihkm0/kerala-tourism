@@ -615,17 +615,6 @@ footer .footer-container p{
     right: 100px;
     max-width: 400px;
   }
-  section.top-destinations .destinations-wrapper .card .card-body{
-    background: rgba(0, 0, 0, 0.524);
-  }
-  section.top-destinations .destinations-wrapper .card .destination h2{
-    padding: 30px 0;
-    margin-top: 0px;
-    color: rgb(255, 255, 255);
-  }
-  section.top-destinations .destinations-wrapper .card .card-body button{
-    display: inline-block;
-  }
 }
 @media screen and (max-width: 768px) {
   .nav .navOpenBtn,
@@ -717,16 +706,41 @@ footer .footer-container p{
     text-align: center;
 
   }
-  section.top-destinations .destinations-wrapper .destination{
-    min-width: 100%;
-    text-align: center;
-    padding: 10px;
-    width: 200px;
-    margin: 20px 10px;
+
+  section.top-destinations .destinations-wrapper .card{
+    width: 220px;
+    height: 150px;
+    
   }
+
+  section.top-destinations .destinations-wrapper .destination img{
+    width: 220px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  section.top-destinations .destinations-wrapper .card .card-body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    bottom: 0;
+    transition:all .5s ease-in;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.524);
+  
+  }
+  /* section.top-destinations .destinations-wrapper .card:hover .card-body{
+    background: rgba(0, 0, 0, 0.524);
+  
+  } */
   section.top-destinations .destinations-wrapper .destination h2{
     font-size: 15px;
   }
+  section.top-destinations .destinations-wrapper .card .card-body button{
+    font-size: 12px;
+  }
+
+
   section.about{
     padding: 30px 20px;
   }
